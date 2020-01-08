@@ -1,0 +1,36 @@
+Connect to the big service first use:
+ssh ghatreh@hpcccloud1.cmix.louisiana.edu
+password: mdef@tpY
+
+then login my own service:
+username:hpcclab@192.168.122.111
+password:hpcclab
+
+service2:
+username:hpcclab@192.168.122.112
+password:hpcclab
+
+
+CP to davood's machine
+rsync hpcclab@192.168.122.111:/home/hpcclab/shangrui/result/* ./result/
+
+
+CP to laptop
+rsync ghatreh@hpcccloud1.cmix.louisiana.edu:/home/ghatreh/shangrui/result/* ./result/
+
+
+#upload file
+scp -r  filename ghatreh@hpcccloud1.cmix.louisiana.edu:~/shangrui/result/
+
+scp -r  filename hpcclab@192.168.122.111:~/shangrui/
+
+ssh ghatreh@hpcccloud2.cmix.louisiana.edu
+password: mdef@tpY
+
+-aSz(file)
+VM with 16 core: hpcclab@192.168.122.230
+VM with 16 cores: hpcclab@192.168.122.231
+VM with 16 cores: hpcclab@192.168.122.232
+VM with 16 cores: hpcclab@192.168.122.233
+VM with 16 cores: hpcclab@192.168.122.234
+
